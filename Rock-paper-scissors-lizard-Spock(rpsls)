@@ -1,0 +1,47 @@
+import random
+def name_to_number(name):
+    if name=="rock":
+        
+        return 0
+    elif name=="spock":
+        return 1
+    elif name=="paper":
+        return 2
+    elif name=="lizard":
+        return 3
+    elif name=="scissor":
+        return 4
+    else:
+          
+        return "choose below option only: \n 1.scissor\n 2. rock \n 3.lizard \n 4.spock"
+def number_to_name(num):
+    if num==4:
+        return "scissor"
+    elif num==3:
+        return "paper"
+    elif num==2:
+        return "paper"
+    elif num==1:
+        return "spock"
+    elif num==0:
+        return "rock"
+def rpls(player_choice):
+    print("\n")
+    print "player choose",player_choice
+    x=name_to_number(player_choice)
+    comp_choice=number_to_name(random.randrange(0,5))
+    print "Computer choose",comp_choice
+    y=name_to_number(comp_choice)
+    if (x-y)%5==1 or (x-y)%5==2:
+        print"PLAYER IS WON!"
+    elif (x-y)%5==3 or (x-y)%5==4:
+        print("COMPUTER WON!")
+    else:
+        print"MATCH IS TIE"
+    
+rpls("scissor")
+rpls("rock")
+rpls("spock")
+rpls("lizard")
+
+        
