@@ -1,2 +1,2 @@
 # Mini-Projects
-Mini Project with python and Web development.
+Mini Project With Python
